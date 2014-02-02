@@ -69,7 +69,6 @@ angular.module('facebook')
           ParseQueryAngular(Parse.FacebookUtils, {
               functionToCall: "logIn", params: [null,
                   {
-
                       success: function (user) {
                           var userId = user.id;
                           FB.api("/me", function (response) {
